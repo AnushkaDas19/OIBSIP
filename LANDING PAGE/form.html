@@ -1,0 +1,63 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="form.js"></script>
+    <style>
+        .signup {
+            background-color: #b779fd;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 20px;
+            max-width: 600px;
+        }
+
+        label {
+            font-size: 25px;
+            font-weight: bolder;
+        }
+
+        body {
+            background-image: url('formbg.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1{
+             font-family: Georgia, 'Times New Roman', Times, serif;
+             font-size: xx-large;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="signup">
+        <h1>SIGN UP FOR PACK SUBSCRIPTION</h1>
+        <form id="spack">
+            <label for="email">Fullname : </label>
+            <input type="text" name="fname" placeholder="Enter your Fullname here"><br>
+            <label for="email">Email : </label>
+            <input type="text" name="email" placeholder="Enter your email id here"><br>
+            <label for="password">Password : </label>
+            <input type="password" name="password" placeholder="Enter your password here"><br>
+            <label for="pack">Subscription Pack : </label><br>
+            <input type="radio" value="essential">Essential Plan<br>
+            <input type="radio" value="premium">Premium Plan<br>
+            <input type="radio" value="elite">Elite Plan<br>
+            <button>Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
